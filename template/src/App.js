@@ -1,4 +1,5 @@
-import { Garagem } from "./Componentes/Garagem";
+import { Garagem }  from "./componentes/Garagem/Garagem";
+import { GlobalStyle } from "./GlobalStyle/GlobalStyle";
 
 export default function App() {
   const nome = "Labenu";
@@ -8,7 +9,8 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div>
+      <GlobalStyle/>
       <Garagem nome={nome} mensagemAprentacao={apresentaGaragem} />
     </div>
   );
